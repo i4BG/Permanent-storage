@@ -10,9 +10,30 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var textLabel: UILabel!
+    
+    @IBOutlet var textFiled: UITextField!
+    
+    @IBAction func button(sender: AnyObject) {
+        
+        var text = textFiled.text
+        
+        //catAge = catAge * 7
+        
+        textFiled.text = "\(text)"
+        
+    }
+    
+   
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+    
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
